@@ -1,0 +1,38 @@
+#nav-header, #nav-main, #nav-footer{
+    background-color: black;
+}
+
+.card{
+    background-color: #df7501
+}
+
+
+#quantity button{
+    background-color: #df7501;
+    width: 25.5px;
+    border: 2px solid black;
+}
+
+#quantity div{
+    background-color: #ffae57;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+#sizes label{
+    background-color: #ffa500;
+    border-radius: 0px;
+}
+
+#sizes input:checked + label{
+    background-color: #df7501;
+}
+
+#bg-image{
+    background-color: rgb(80, 76, 76);
+    z-index: -1;
+}
+
+#nav-footer{
+align-items: center;
+}

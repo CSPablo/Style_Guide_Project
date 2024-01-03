@@ -1,177 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PizzaShop</title>
-    <link rel="stylesheet" href="bootsrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootsrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootsrap/css/css.css" />
 </head>
 
 <body>
+  <div id="bg-image">
     <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">PizzaShop</a>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Iniciar Sesión</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Localización</a>
-                            </li>
-                        </ul>
+            <header>
+                <nav id="nav-header" class="navbar navbar-expand-lg" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">PizzaShop</a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Iniciar Sesión</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Localización</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <img src="img/banner.png" class="img-fluid d-none d-md-block" />
+            </header>
 
+            <main>
+                <ul id="nav-main" class="nav nav-pills justify-content-center" data-bs-theme="">
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#">Bebidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#">Pizzas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#">Entrantes</a>
+                    </li>
+                </ul>
+
+                <div class="card-group d-flex flex-column align-items-center">
+                    <div class="card flex-row mt-4 rounded-1" style="width: 20rem; height: 11rem">
+                        <img src="img/card-image.png" class="card-img-top" alt="..." />
+                        <div class="card-body d-flex flex-column py-0">
+                            <h5 class="card-title">Pizza Prosciutto</h5>
+                            <p class="card-text my-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <div id="quantity" class="btn-group-sm d-flex" role="group">
+                                <button type="button" class="btn btn-warning rounded-0 rounded-start">
+                                    +
+                                </button>
+                                <div class="col-6 text-center justify-content-center">0</div>
+                                <button type="button" class="btn btn-warning rounded-0 rounded-end">
+                                    -
+                                </button>
+                            </div>
+
+                            <div class="row">
+                                <div id="sizes" class="col-6 btn-group-sm my-1 d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                        autocomplete="off" checked />
+                                    <label class="btn btn-sm" for="btnradio1">S</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                        autocomplete="off" />
+                                    <label class="btn btn-sm" for="btnradio2">M</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                        autocomplete="off" />
+                                    <label class="btn btn-sm" for="btnradio3">L</label>
+                                </div>
+                                <div class="col-6 my-2">
+                                    <span> 10.95€ </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card flex-row mt-4 rounded-1" style="width: 20rem; height: 11rem">
+                        <img src="img/card-image.png" class="card-img-top" alt="..." />
+                        <div class="card-body d-flex flex-column py-0">
+                            <h5 class="card-title">Pizza Prosciutto</h5>
+                            <p class="card-text my-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <div id="quantity" class="btn-group-sm d-flex" role="group">
+                                <button type="button" class="btn btn-warning rounded-0 rounded-start">
+                                    +
+                                </button>
+                                <div class="col-6 text-center justify-content-center">0</div>
+                                <button type="button" class="btn btn-warning rounded-0 rounded-end">
+                                    -
+                                </button>
+                            </div>
+
+                            <div class="row">
+                                <div id="sizes" class="col-6 btn-group-sm my-1 d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                        autocomplete="off" checked />
+                                    <label class="btn btn-sm" for="btnradio1">S</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                        autocomplete="off" />
+                                    <label class="btn btn-sm" for="btnradio2">M</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                        autocomplete="off" />
+                                    <label class="btn btn-sm" for="btnradio3">L</label>
+                                </div>
+                                <div class="col-6 my-2">
+                                    <span> 10.95€ </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card flex-row mt-4 rounded-1" style="width: 20rem; height: 11rem">
+                        <img src="img/card-image.png" class="card-img-top" alt="..." />
+                        <div class="card-body d-flex flex-column py-0">
+                            <h5 class="card-title">Pizza Prosciutto</h5>
+                            <p class="card-text my-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <div id="quantity" class="btn-group-sm d-flex" role="group">
+                                <button type="button" class="btn btn-warning rounded-0 rounded-start">
+                                    +
+                                </button>
+                                <div class="col-6 text-center justify-content-center">0</div>
+                                <button type="button" class="btn btn-warning rounded-0 rounded-end">
+                                    -
+                                </button>
+                            </div>
+
+                            <div class="row">
+                                <div id="sizes" class="col-6 btn-group-sm my-1 d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                        autocomplete="off" checked />
+                                    <label class="btn btn-sm" for="btnradio1">S</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                        autocomplete="off" />
+                                    <label class="btn btn-sm" for="btnradio2">M</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                        autocomplete="off" />
+                                    <label class="btn btn-sm" for="btnradio3">L</label>
+                                </div>
+                                <div class="col-6 my-2">
+                                    <span> 10.95€ </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </main>
 
-            </nav>
-            <img src="img/banner.png" class="img-fluid">
-        </header>
-
-        <main>
-            <ul class="nav nav-pills justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Bebidas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pizzas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Entrantes</a>
-                </li>
-            </ul>
-
-            <div class="card-group d-flex flex-column align-items-center">
-                <div class="card flex-row " style="width: 20rem; height: 11rem;">
-                    <img src="img/card-image.png" class="card-img-top" alt="...">
-                    <div class="card-body d-flex flex-column py-0">
-                        <h5 class="card-title">Pizza Prosciutto</h5>
-                        <p class="card-text my-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                        <div class="btn-group-sm d-flex" role="group">
-                            <button type="button" class="btn btn-warning">+</button>
-                            <div class="col-6 text-center justify-content-center"> 0 </div>
-                            <button type="button" class="btn btn-warning">-</button>
+            <footer>
+                <img src="img/footer.png" class="img-fluid mt-4" />
+                <div id="nav-footer" class="container-fluid">
+                    <div class="row align-items-cent">
+                        <div class="col-4 d-flex flex-column">
+                            <p class="fs-5 text-light">Nutrición y calidad</p>
+                            <a class="fs-6 link-light" href="#">Calidad y alimetación</a>
+                            <a class="fs-6 link-light" href="#">Listado de alérgenos</a>
+                            <a class="fs-6 link-light" href="#">Valores nutricionales</a>
                         </div>
-
-                        <div class="row">
-                            <div class="col-6 btn-group-sm my-1 d-flex" role="group" >
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
-                                    checked>
-                                <label class="btn btn-outline-warning  btn-sm" for="btnradio1">S</label>
-
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                <label class="btn btn-outline-warning  btn-sm" for="btnradio2">M</label>
-
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                                <label class="btn btn-outline-warning  btn-sm" for="btnradio3">L</label>
-                            </div>
-                            <div class="col-6 my-2">
-                                <span> 10.95€ </span>
-                            </div>
+                        <div class="col-4 d-flex flex-column">
+                            <p class="fs-5 text-light">Aviso legal</p>
+                            <a class="fs-6 link-light" href="#">Aviso legal</a>
+                            <a class="fs-6 link-light" href="#">Condiciones generales</a>
+                            <a class="fs-6 link-light" href="#">Política de privacidad</a>
+                            <a class="fs-6 link-light" href="#">Política de cookies</a>
                         </div>
-
-                    </div>
-                    
-                </div>
-                <div class="card flex-row " style="width: 20rem; height: 11rem;">
-                    <img src="img/card-image.png" class="card-img-top" alt="...">
-                    <div class="card-body d-flex flex-column py-0">
-                        <h5 class="card-title">Pizza Prosciutto</h5>
-                        <p class="card-text my-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                        <div class="btn-group-sm d-flex" role="group">
-                            <button type="button" class="btn btn-warning">+</button>
-                            <div class="col-6 text-center justify-content-center"> 0 </div>
-                            <button type="button" class="btn btn-warning">-</button>
+                        <div class="col-4 d-flex flex-column">
+                            <p class="fs-5 text-light">Corporativo</p>
+                            <a class="fs-6 link-light" href="#">Acerca de nosotros</a>
+                            <a class="fs-6 link-light" href="#">Trabaja con nosotros</a>
+                            <a class="fs-6 link-light" href="#">Contacto</a>
+                            <a class="fs-6 link-light" href="#">Preguntas frecuentes</a>
                         </div>
-
-                        <div class="row">
-                            <div class="col-6 btn-group-sm my-1 d-flex" role="group" >
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
-                                    checked>
-                                <label class="btn btn-outline-warning  btn-sm" for="btnradio1">S</label>
-
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                <label class="btn btn-outline-warning  btn-sm" for="btnradio2">M</label>
-
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                                <label class="btn btn-outline-warning  btn-sm" for="btnradio3">L</label>
-                            </div>
-                            <div class="col-6 my-2">
-                                <span> 10.95€ </span>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-                <div class="card flex-row " style="width: 20rem; height: 11rem;">
-                    <img src="img/card-image.png" class="card-img-top" alt="...">
-                    <div class="card-body d-flex flex-column py-0">
-                        <h5 class="card-title">Pizza Prosciutto</h5>
-                        <p class="card-text my-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                        <div class="btn-group-sm d-flex" role="group">
-                            <button type="button" class="btn btn-warning">+</button>
-                            <div class="col-6 text-center justify-content-center"> 0 </div>
-                            <button type="button" class="btn btn-warning">-</button>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6 btn-group-sm my-1 d-flex" role="group" >
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
-                                    checked>
-                                <label class="btn btn-outline-warning  btn-sm" for="btnradio1">S</label>
-
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                <label class="btn btn-outline-warning  btn-sm" for="btnradio2">M</label>
-
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                                <label class="btn btn-outline-warning  btn-sm" for="btnradio3">L</label>
-                            </div>
-                            <div class="col-6 my-2">
-                                <span> 10.95€ </span>
-                            </div>
-                        </div>
-
-                    </div>
-        </main>
-
-        <footer>
-            <img src="img/footer.png" class="img-fluid">
-            <div class="bg-black container-fluid">
-                <div class="row">
-                <div class="col-4">
-                    <p>Nutrición y calidad</p>
-                    <a href="#">Calidad y alimetación</a>
-                    <a href="#">Listado de alérgenos</a>
-                    <a href="#">Valores nutricionales</a>
-                </div>
-                <div class="col-4">
-                    <p>Aviso legal</p>
-                    <a href="#">Aviso legal</a>
-                    <a href="#">Condiciones generales</a>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Política de cookies</a>
-                </div>
-                <div class="col-4">
-                    <p>Corporativo</p>
-                    <a href="#">Acerca de nosotros</a>
-                    <a href="#">Trabaja con nosotros</a>
-                    <a href="#">Contacto</a>
-                    <a href="#">Preguntas frecuentes</a>
-                </div>
-            </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </div>
     <script src="bootsrap/js/bootstrap.bundle.min.js"></script>
 </body>
