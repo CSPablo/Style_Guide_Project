@@ -2,7 +2,7 @@
     background-color: black;
 }
 
-.card{
+.card, #orden{
     background-color: #df7501
 }
 
@@ -35,5 +35,22 @@
 
 #nav-footer{
 align-items: center;
+}
+
+#infoOrden{
+    background-color: #ffa500;
+    margin: 0px -12px
+}
+
+#tipoOrden label{
+    background-color: #ffa500;
+    border-radius: 0px;
+    width: 100%;
+    margin: 0 -12px;
+}
+
+#tipoOrden input:checked + label{
+    background-color: #df7501;
+    border: 0;
 }
 

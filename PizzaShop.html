@@ -52,9 +52,9 @@
                     </li>
                 </ul>
 
-                <div class="row container-fluid px-0 mx-0">
+                <div class="row container-fluid px-0 mx-0 justify-content-around">
 
-                    <div class="card-group d-flex flex-column align-items-center col-9">
+                    <div class="card-group d-flex flex-column align-items-center col-lg-9">
                         <div class="card flex-row mt-4 rounded-1" style="width: 20rem; height: 11rem">
                             <img src="img/card-image.png" class="card-img-top" alt="..." />
                             <div class="card-body d-flex flex-column py-0">
@@ -168,14 +168,14 @@
                         </div>
                     </div>
 
-                    <div class="d-flex col-3 flex-column bg-primary mt-4 d-none d-lg-flex">
+                    <div id="orden" class="col-lg-3 flex-column mt-4 d-none d-lg-flex rounded-3">
                         <div id="tipoOrden" class="btn-group-sm d-flex justify-content-around" role="group">
                             <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
                                 checked />
-                            <label class="btn btn-sm" for="btnradio1">Recoger</label>
+                            <label class="btn btn-sm" for="">Recoger</label>
 
                             <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
-                            <label class="btn btn-sm" for="btnradio3">Llevar</label>
+                            <label class="btn btn-sm" for="">Llevar</label>
                         </div>
                         <div id="formOrden" class="d-flex flex-column">
                             <label for="nombre" class="form-label-sm">Nombre</label>
@@ -185,22 +185,22 @@
                             <label for="telefono" class="form-label-sm">Telefono</label>
                             <input type="tel" class="form-control-sm" id="telefono">
                         </div>
-                        <div id="infoOrden" class="mb-auto">
-                            <div class="my-3">
+                        <div id="infoOrden" class="flex-fill mt-4">
+                            <div class="my-3 d-flex justify-content-around">
                                 <span class="infoSize">M </span><span class="infoPiza">Prosciutto</span><span
                                     class="infoPrice"> 10.95€</span>
                             </div>
-                            <div class="my-3">
+                            <div class="my-3 d-flex justify-content-around">
                                 <span class="infoSize">M </span><span class="infoPiza">Prosciutto</span><span
                                     class="infoPrice"> 10.95€</span>
                             </div>
                         </div>
-                        <div id="comprarOrden" class="d-flex flex-column align-items-center">
+                        <div id="comprarOrden" class="d-flex flex-column align-items-center py-2">
                             <div id="infoTotal">
                                 <span>Importe total </span><span id="infoTotal"> 21.90€</span>
                             </div>
                             <div>
-                                <button type="submit" class="btn ju">Comprar</button>
+                                <button type="submit" class="btn fw-bolder border-black">Comprar</button>
                             </div>
                         </div>
                     </div>
