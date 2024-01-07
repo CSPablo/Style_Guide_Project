@@ -10,240 +10,246 @@
 </head>
 
 <body id="bg-image">
-        <div class="container h-100">
-            <header>
-
-                <!--Navbar de opciones de cliente-->
-                <nav id="nav-header" class="navbar navbar-expand-lg" data-bs-theme="dark">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">
-                            <img src="img/logo.png" alt="Logo" width="30" height="24" class="bg-light rounded-1 d-inline-block align-text-top">PizzaShop</a>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" id="registro">wef</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contacto</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Localización</a>
-                                </li>
-                            </ul>
-                        </div>
+    <div class="container h-100">
+        <header>
+            <!--Navbar de opciones de cliente-->
+            <nav id="nav-header" class="navbar navbar-expand-lg" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" alt="Logo" width="30" height="24"
+                            class="bg-light rounded-1 d-inline-block align-text-top">PizzaShop</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="registro">Registro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Localización</a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-                <!--Banner header-->
-                <img src="img/banner.png" class="img-fluid d-none d-lg-block" />
-            </header>
+                </div>
+            </nav>
+            <!--Banner header-->
+            <img src="img/banner.png" class="img-fluid d-none d-lg-block" />
+        </header>
 
-            <main>
-                <!--Navbar de productos-->
-                <ul id="nav-main" class="nav nav-pills justify-content-around" data-bs-theme="">
-                    <li class="nav-item">
-                        <a class="nav-link link-light" href="#">Bebidas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-light" href="#">Pizzas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-light" href="#">Entrantes</a>
-                    </li>
-                </ul>
+        <main>
+            <!--Navbar de productos-->
+            <ul id="nav-main" class="nav nav-pills justify-content-around" data-bs-theme="">
+                <li class="nav-item">
+                    <a class="nav-link link-light" href="#">Bebidas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-light" href="#">Pizzas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-light" href="#">Entrantes</a>
+                </li>
+            </ul>
 
-                <!--Flex grid para ordenar el Card Layout y la simulación de ticket-->
-                <div class="row container-fluid px-0 mx-0 justify-content-around">
-                    <!--Grid Card (cada class="col" equivale a una card)-->
-                    <div
-                        class="d-flex flex-column flex-wrap flex-lg-row align-items-center justify-content-lg-evenly col-lg-9">
-                        <div class="col">
-                            <div class="card flex-row mt-4 rounded-1" style="width: 20rem; height: 11rem">
-                                <img src="img/card-image.png" class="card-img-top" alt="..." />
-                                <div class="card-body d-flex flex-column py-0">
-                                    <h5 class="card-title">Pizza Prosciutto</h5>
-                                    <p class="card-text my-0">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    </p>
-                                    <div id="quantity" class="btn-group-sm d-flex" role="group">
-                                        <button type="button" class="btn btn-warning rounded-0 rounded-start">
-                                            +
-                                        </button>
-                                        <div class="col-6 text-center justify-content-center">0</div>
-                                        <button type="button" class="btn btn-warning rounded-0 rounded-end">
-                                            -
-                                        </button>
+            <!--Flex grid para ordenar el Card Layout y la simulación de ticket-->
+            <div class="row container-fluid px-0 mx-0 justify-content-around">
+                <!--Grid Card (cada class="col" equivale a una card)-->
+                <div
+                    class="d-flex flex-column flex-wrap flex-lg-row align-items-center justify-content-lg-evenly col-lg-9">
+                    <div class="col">
+                        <div class="card flex-row mt-4 rounded-1" style="width: 20rem;">
+                            <img src="img/card-image.png" class="card-img-top img-fluid"
+                                style="max-width: 197px; min-width: 149px;" alt="..." />
+                            <div class="card-body d-flex flex-column py-0">
+                                <h5 class="card-title">Pizza Prosciutto</h5>
+                                <p class="card-text my-0">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                </p>
+                                <div id="quantity" class="btn-group-sm d-flex" role="group">
+                                    <button type="button" class="btn btn-warning rounded-0 rounded-start">
+                                        +
+                                    </button>
+                                    <div class="col-6 text-center justify-content-center">0</div>
+                                    <button type="button" class="btn btn-warning rounded-0 rounded-end">
+                                        -
+                                    </button>
+                                </div>
+
+                                <div class="row">
+                                    <div id="sizes" class="col-6 btn-group-sm my-1 d-flex" role="group">
+                                        <input type="radio" class="btn-check" name="pizza1" id="pequeñaPizza1"
+                                            autocomplete="off" checked />
+                                        <label class="btn btn-sm" for="pequeñaPizza1">S</label>
+
+                                        <input type="radio" class="btn-check" name="pizza1" id="medianaPizza1"
+                                            autocomplete="off" />
+                                        <label class="btn btn-sm" for="medianaPizza1">M</label>
+
+                                        <input type="radio" class="btn-check" name="pizza1" id="grandePizza1"
+                                            autocomplete="off" />
+                                        <label class="btn btn-sm" for="grandePizza1">L</label>
                                     </div>
-
-                                    <div class="row">
-                                        <div id="sizes" class="col-6 btn-group-sm my-1 d-flex" role="group">
-                                            <input type="radio" class="btn-check" name="pizza1" id="pequeñaPizza1"
-                                                autocomplete="off" checked />
-                                            <label class="btn btn-sm" for="pequeñaPizza1">S</label>
-
-                                            <input type="radio" class="btn-check" name="pizza1" id="medianaPizza1"
-                                                autocomplete="off" />
-                                            <label class="btn btn-sm" for="medianaPizza1">M</label>
-
-                                            <input type="radio" class="btn-check" name="pizza1" id="grandePizza1"
-                                                autocomplete="off" />
-                                            <label class="btn btn-sm" for="grandePizza1">L</label>
-                                        </div>
-                                        <div class="col-6 my-2">
-                                            <span> 10.95€ </span>
-                                        </div>
+                                    <div class="col-6 my-2">
+                                        <span> 10.95€ </span>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
 
-                        <div class="col">
-                            <div class="card flex-row mt-4 rounded-1" style="width: 20rem; height: 11rem">
-                                <img src="img/card-image.png" class="card-img-top" alt="..." />
-                                <div class="card-body d-flex flex-column py-0">
-                                    <h5 class="card-title">Pizza Prosciutto</h5>
-                                    <p class="card-text my-0">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    </p>
-                                    <div id="quantity" class="btn-group-sm d-flex" role="group">
-                                        <button type="button" class="btn btn-warning rounded-0 rounded-start">
-                                            +
-                                        </button>
-                                        <div class="col-6 text-center justify-content-center">0</div>
-                                        <button type="button" class="btn btn-warning rounded-0 rounded-end">
-                                            -
-                                        </button>
-                                    </div>
-
-                                    <div class="row">
-                                        <div id="sizes" class="col-6 btn-group-sm my-1 d-flex" role="group">
-                                            <input type="radio" class="btn-check" name="pizza2" id="pequeñaPizza2"
-                                                autocomplete="off" checked />
-                                            <label class="btn btn-sm" for="pequeñaPizza2">S</label>
-
-                                            <input type="radio" class="btn-check" name="pizza2" id="medianaPizza2"
-                                                autocomplete="off" />
-                                            <label class="btn btn-sm" for="medianaPizza2">M</label>
-
-                                            <input type="radio" class="btn-check" name="pizza2" id="grandePizza2"
-                                                autocomplete="off" />
-                                            <label class="btn btn-sm" for="grandePizza2">L</label>
-                                        </div>
-                                        <div class="col-6 my-2">
-                                            <span> 10.95€ </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col">
-                            <div class="card flex-row mt-4 rounded-1" style="width: 20rem; height: 11rem">
-                                <img src="img/card-image.png" class="card-img-top" alt="..." />
-                                <div class="card-body d-flex flex-column py-0">
-                                    <h5 class="card-title">Pizza Prosciutto</h5>
-                                    <p class="card-text my-0">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    </p>
-                                    <div id="quantity" class="btn-group-sm d-flex" role="group">
-                                        <button type="button" class="btn btn-warning rounded-0 rounded-start">
-                                            +
-                                        </button>
-                                        <div class="col-6 text-center justify-content-center">0</div>
-                                        <button type="button" class="btn btn-warning rounded-0 rounded-end">
-                                            -
-                                        </button>
-                                    </div>
-
-                                    <div class="row">
-                                        <div id="sizes" class="col-6 btn-group-sm my-1 d-flex" role="group">
-                                            <input type="radio" class="btn-check" name="pizza3" id="pequeñaPizza3"
-                                                autocomplete="off" checked />
-                                            <label class="btn btn-sm" for="pequeñaPizza3">S</label>
-
-                                            <input type="radio" class="btn-check" name="pizza3" id="medianaPizza3"
-                                                autocomplete="off" />
-                                            <label class="btn btn-sm" for="medianaPizza2">M</label>
-
-                                            <input type="radio" class="btn-check" name="pizza3" id="grandePizza3"
-                                                autocomplete="off" />
-                                            <label class="btn btn-sm" for="grandePizza3">L</label>
-                                        </div>
-                                        <div class="col-6 my-2">
-                                            <span> 10.95€ </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col">
-                            <div class="card flex-row mt-4 rounded-1" style="width: 20rem; height: 11rem">
-                                <img src="img/card-image.png" class="card-img-top" alt="..." />
-                                <div class="card-body d-flex flex-column py-0">
-                                    <h5 class="card-title">Pizza Prosciutto</h5>
-                                    <p class="card-text my-0">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    </p>
-                                    <div id="quantity" class="btn-group-sm d-flex" role="group">
-                                        <button type="button" class="btn btn-warning rounded-0 rounded-start">
-                                            +
-                                        </button>
-                                        <div class="col-6 text-center justify-content-center">0</div>
-                                        <button type="button" class="btn btn-warning rounded-0 rounded-end">
-                                            -
-                                        </button>
-                                    </div>
-
-                                    <div class="row">
-                                        <div id="sizes" class="col-6 btn-group-sm my-1 d-flex" role="group">
-                                            <input type="radio" class="btn-check" name="pizza4" id="pequeñaPizza4"
-                                                autocomplete="off" checked />
-                                            <label class="btn btn-sm" for="pequeñaPizza4">S</label>
-
-                                            <input type="radio" class="btn-check" name="pizza4" id="medianaPizza4"
-                                                autocomplete="off" />
-                                            <label class="btn btn-sm" for="medianaPizza4">M</label>
-
-                                            <input type="radio" class="btn-check" name="pizza4" id="grandePizza4"
-                                                autocomplete="off" />
-                                            <label class="btn btn-sm" for="grandePizza4">L</label>
-                                        </div>
-                                        <div class="col-6 my-2">
-                                            <span> 10.95€ </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
 
-                    <!--Simulación de ticket-->
-                    <div id="orden" class="col-lg-3 flex-column mt-4 d-none d-lg-flex rounded-3">
-                        <div id="tipoOrden" class="btn-group-sm d-flex justify-content-around" role="group">
-                            <input type="radio" class="btn-check" name="tipoOrden" id="recoger" autocomplete="off"
-                                checked />
-                            <label class="btn btn-sm" for="recoger">Recoger</label>
+                    <div class="col">
+                        <div class="card flex-row mt-4 rounded-1" style="width: 20rem">
+                            <img src="img/card-image.png" class="card-img-top"
+                                style="max-width: 197px; min-width: 149px;" alt="..." />
+                            <div class="card-body d-flex flex-column py-0">
+                                <h5 class="card-title">Pizza Prosciutto</h5>
+                                <p class="card-text my-0">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                </p>
+                                <div id="quantity" class="btn-group-sm d-flex" role="group">
+                                    <button type="button" class="btn btn-warning rounded-0 rounded-start">
+                                        +
+                                    </button>
+                                    <div class="col-6 text-center justify-content-center">0</div>
+                                    <button type="button" class="btn btn-warning rounded-0 rounded-end">
+                                        -
+                                    </button>
+                                </div>
 
-                            <input type="radio" class="btn-check" name="tipoOrden" id="llevar" autocomplete="off" />
-                            <label class="btn btn-sm" for="llevar">Llevar</label>
+                                <div class="row">
+                                    <div id="sizes" class="col-6 btn-group-sm my-1 d-flex" role="group">
+                                        <input type="radio" class="btn-check" name="pizza2" id="pequeñaPizza2"
+                                            autocomplete="off" checked />
+                                        <label class="btn btn-sm" for="pequeñaPizza2">S</label>
+
+                                        <input type="radio" class="btn-check" name="pizza2" id="medianaPizza2"
+                                            autocomplete="off" />
+                                        <label class="btn btn-sm" for="medianaPizza2">M</label>
+
+                                        <input type="radio" class="btn-check" name="pizza2" id="grandePizza2"
+                                            autocomplete="off" />
+                                        <label class="btn btn-sm" for="grandePizza2">L</label>
+                                    </div>
+                                    <div class="col-6 my-2">
+                                        <span> 10.95€ </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <form action="#">
+
+                    </div>
+
+                    <div class="col">
+                        <div class="card flex-row mt-4 rounded-1" style="width: 20rem">
+                            <img src="img/card-image.png" class="card-img-top"
+                                style="max-width: 197px; min-width: 149px;" alt="..." />
+                            <div class="card-body d-flex flex-column py-0">
+                                <h5 class="card-title">Pizza Prosciutto</h5>
+                                <p class="card-text my-0">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                </p>
+                                <div id="quantity" class="btn-group-sm d-flex" role="group">
+                                    <button type="button" class="btn btn-warning rounded-0 rounded-start">
+                                        +
+                                    </button>
+                                    <div class="col-6 text-center justify-content-center">0</div>
+                                    <button type="button" class="btn btn-warning rounded-0 rounded-end">
+                                        -
+                                    </button>
+                                </div>
+
+                                <div class="row">
+                                    <div id="sizes" class="col-6 btn-group-sm my-1 d-flex" role="group">
+                                        <input type="radio" class="btn-check" name="pizza3" id="pequeñaPizza3"
+                                            autocomplete="off" checked />
+                                        <label class="btn btn-sm" for="pequeñaPizza3">S</label>
+
+                                        <input type="radio" class="btn-check" name="pizza3" id="medianaPizza3"
+                                            autocomplete="off" />
+                                        <label class="btn btn-sm" for="medianaPizza3">M</label>
+
+                                        <input type="radio" class="btn-check" name="pizza3" id="grandePizza3"
+                                            autocomplete="off" />
+                                        <label class="btn btn-sm" for="grandePizza3">L</label>
+                                    </div>
+                                    <div class="col-6 my-2">
+                                        <span> 10.95€ </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <div class="card flex-row mt-4 rounded-1" style="width: 20rem;">
+                            <img src="img/card-image.png" class="card-img-top"
+                                style="max-width: 197px; min-width: 149px;" alt="..." />
+                            <div class="card-body d-flex flex-column py-0">
+                                <h5 class="card-title">Pizza Prosciutto</h5>
+                                <p class="card-text my-0">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                </p>
+                                <div id="quantity" class="btn-group-sm d-flex" role="group">
+                                    <button type="button" class="btn btn-warning rounded-0 rounded-start">
+                                        +
+                                    </button>
+                                    <div class="col-6 text-center justify-content-center">0</div>
+                                    <button type="button" class="btn btn-warning rounded-0 rounded-end">
+                                        -
+                                    </button>
+                                </div>
+
+                                <div class="row">
+                                    <div id="sizes" class="col-6 btn-group-sm my-1 d-flex" role="group">
+                                        <input type="radio" class="btn-check" name="pizza4" id="pequeñaPizza4"
+                                            autocomplete="off" checked />
+                                        <label class="btn btn-sm" for="pequeñaPizza4">S</label>
+
+                                        <input type="radio" class="btn-check" name="pizza4" id="medianaPizza4"
+                                            autocomplete="off" />
+                                        <label class="btn btn-sm" for="medianaPizza4">M</label>
+
+                                        <input type="radio" class="btn-check" name="pizza4" id="grandePizza4"
+                                            autocomplete="off" />
+                                        <label class="btn btn-sm" for="grandePizza4">L</label>
+                                    </div>
+                                    <div class="col-6 my-2">
+                                        <span> 10.95€ </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Simulación de ticket-->
+                <form action="#" id="orden" class="col-lg-3 flex-column mt-4 d-none d-lg-flex rounded-3">
+                    <div id="tipoOrden" class="btn-group-sm d-flex justify-content-around" role="group">
+                        <input type="radio" class="btn-check" name="tipoOrden" id="recoger" autocomplete="off"
+                            checked />
+                        <label class="btn btn-sm" for="recoger">Recoger</label>
+
+                        <input type="radio" class="btn-check" name="tipoOrden" id="llevar" autocomplete="off" />
+                        <label class="btn btn-sm" for="llevar">Llevar</label>
+                    </div>
                         <div id="formOrden" class="d-flex flex-column">
                             <label for="nombre" class="form-label-sm">Nombre</label>
-                            <input type="text" class="form-control-sm" id="nombre" pattern="[a-zA-Z]+" oninvalid="alert('Nombre no válido')">
+                            <input type="text" class="form-control-sm" id="nombre" pattern="[a-zA-Z]+"
+                                oninvalid="alert('Nombre no válido')">
                             <label for="direccion" class="form-label-sm">Dirección</label>
-                            <input type="text" class="form-control-sm" id="direccion" pattern="[a-zA-Z0-9 ]+" oninvalid="alert('Dirección no válida')">
+                            <input type="text" class="form-control-sm" id="direccion" pattern="[a-zA-Z0-9 ]+"
+                                oninvalid="alert('Dirección no válida')">
                             <label for="telefono" class="form-label-sm">Telefono</label>
-                            <input type="tel" class="form-control-sm" id="telefono" pattern="[0-9]{9}" oninvalid="alert('Teléfono no válido')">
+                            <input type="tel" class="form-control-sm" id="telefono" pattern="[0-9]{9}"
+                                oninvalid="alert('Teléfono no válido')">
                         </div>
                         <div id="infoOrden" class="flex-fill mt-4">
                             <div class="my-3 d-flex justify-content-around">
@@ -263,39 +269,38 @@
                                 <button type="submit" class="btn fw-bolder border-black">Comprar</button>
                             </div>
                         </div>
-                    </form>
-                    </div>
+                </form>
+            </div>
+
+        </main>
+
+        <footer>
+            <!--Banner footer-->
+            <img src="img/footer.jpeg" class="img-fluid mt-4" />
+            <!--Footer-->
+            <div id="nav-footer" class="container d-flex justify-content-around">
+                <div class="col-4 d-flex flex-column align-items-center">
+                    <p class="fs-5 text-light">Nutrición y calidad</p>
+                    <a class="fs-6 link-light" href="#">Calidad y alimentación</a>
+                    <a class="fs-6 link-light" href="#">Listado de alérgenos</a>
+                    <a class="fs-6 link-light" href="#">Valores nutricionales</a>
+
                 </div>
-
-            </main>
-
-            <footer>
-                <!--Banner footer-->
-                <img src="img/footer.jpeg" class="img-fluid mt-4" />
-                <!--Footer-->
-                <div id="nav-footer" class="container d-flex justify-content-around">
-                    <div class="col-4 d-flex flex-column align-items-center">
-                        <p class="fs-5 text-light">Nutrición y calidad</p>
-                        <a class="fs-6 link-light" href="#">Calidad y alimentación</a>
-                        <a class="fs-6 link-light" href="#">Listado de alérgenos</a>
-                        <a class="fs-6 link-light" href="#">Valores nutricionales</a>
-
-                    </div>
-                    <div class="col-4 d-flex flex-column align-items-center">
-                        <p class="fs-5 text-light">Aviso legal</p>
-                        <a class="fs-6 link-light" href="#">Condiciones generales</a>
-                        <a class="fs-6 link-light" href="#">Política de privacidad</a>
-                        <a class="fs-6 link-light" href="#">Política de cookies</a>
-                    </div>
-                    <div class="col-4 d-flex flex-column align-items-center">
-                        <p class="fs-5 text-light">Corporativo</p>
-                        <a class="fs-6 link-light" href="#">Acerca de nosotros</a>
-                        <a class="fs-6 link-light" href="#">Trabaja con nosotros</a>
-                        <a class="fs-6 link-light" href="#">Preguntas frecuentes</a>
-                    </div>
+                <div class="col-4 d-flex flex-column align-items-center">
+                    <p class="fs-5 text-light">Aviso legal</p>
+                    <a class="fs-6 link-light" href="#">Condiciones generales</a>
+                    <a class="fs-6 link-light" href="#">Política de privacidad</a>
+                    <a class="fs-6 link-light" href="#">Política de cookies</a>
                 </div>
-            </footer>
-        </div>
+                <div class="col-4 d-flex flex-column align-items-center">
+                    <p class="fs-5 text-light">Corporativo</p>
+                    <a class="fs-6 link-light" href="#">Acerca de nosotros</a>
+                    <a class="fs-6 link-light" href="#">Trabaja con nosotros</a>
+                    <a class="fs-6 link-light" href="#">Preguntas frecuentes</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 
     <!-- Modal Cookies-->
@@ -355,32 +360,41 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="#">
-                <div class="modal-body d-flex flex-column">
-                            <label for="nombreRegistro" class="form-label-sm">Nombre</label>
-                            <input type="text" class="form-control-sm" id="nombreRegistro" pattern="[a-zA-Z]+" oninvalid="alert('Nombre no válido')">
-                            <label for="contraseñaRegistro" class="form-label-sm">Contraseña</label>
-                            <input type="password" id="contraseñaRegistro" class="form-control-sm" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,16}" oninvalid="alert('Contraseña no válida')">
-                            <div id="passwordHelpBlock" class="form-text">
-                                La contraseña debe contener mínimo una letra minúscula, una mayúscula y un número. Longitud entre 8 y 16 carácteres.
-                            </div>
-                            <label for="correoRegistro" class="form-label-sm">Correo</label>
-                            <input type="email" class="form-control-sm" id="correoRegistro" placeholder="correo@ejemplo.com" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" oninvalid="alert('Correo no válido')">                          
-                            <label for="direccionRegistro" class="form-label-sm">Dirección</label>
-                            <input type="text" class="form-control-sm" id="direccionRegistro" pattern="[a-zA-Z0-9 ]+" oninvalid="alert('Dirección no válida')">
-                            <label for="telefonoRegistro" class="form-label-sm">Telefono</label>
-                            <input type="tel" class="form-control-sm" id="telefonoRegistro" pattern="[0-9]{9}" oninvalid="alert('Teléfono no válido')">
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Registrarse!</button>
-                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Ya tengo una cuenta!</button>
-                </div>
-            </form>
+                    <div class="modal-body d-flex flex-column">
+                        <label for="nombreRegistro" class="form-label-sm">Nombre</label>
+                        <input type="text" class="form-control-sm" id="nombreRegistro" pattern="[a-zA-Z]+"
+                            oninvalid="alert('Nombre no válido')">
+                        <label for="contraseñaRegistro" class="form-label-sm">Contraseña</label>
+                        <input type="password" id="contraseñaRegistro" class="form-control-sm"
+                            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,16}"
+                            oninvalid="alert('Contraseña no válida')">
+                        <div id="passwordHelpBlock" class="form-text">
+                            La contraseña debe contener mínimo una letra minúscula, una mayúscula y un número. Longitud
+                            entre 8 y 16 carácteres.
+                        </div>
+                        <label for="correoRegistro" class="form-label-sm">Correo</label>
+                        <input type="email" class="form-control-sm" id="correoRegistro" placeholder="correo@ejemplo.com"
+                            pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+                            oninvalid="alert('Correo no válido')">
+                        <label for="direccionRegistro" class="form-label-sm">Dirección</label>
+                        <input type="text" class="form-control-sm" id="direccionRegistro" pattern="[a-zA-Z0-9 ]+"
+                            oninvalid="alert('Dirección no válida')">
+                        <label for="telefonoRegistro" class="form-label-sm">Telefono</label>
+                        <input type="tel" class="form-control-sm" id="telefonoRegistro" pattern="[0-9]{9}"
+                            oninvalid="alert('Teléfono no válido')">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Registrarse!</button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Ya tengo una
+                            cuenta!</button>
+                    </div>
+                </form>
 
             </div>
         </div>
     </div>
     <script src="bootsrap/js/bootstrap.bundle.min.js"></script>
-    <!--<script src="bootsrap/js/js.js"></script>-->
+    <script src="bootsrap/js/js.js"></script>
 </body>
 
 </html>
