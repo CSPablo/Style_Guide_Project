@@ -25,7 +25,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Iniciar Sesión</a>
+                                    <a class="nav-link" href="#">Registrarse</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Contacto</a>
@@ -232,13 +232,14 @@
                             <input type="radio" class="btn-check" name="tipoOrden" id="llevar" autocomplete="off" />
                             <label class="btn btn-sm" for="llevar">Llevar</label>
                         </div>
+                        <form action="#">
                         <div id="formOrden" class="d-flex flex-column">
                             <label for="nombre" class="form-label-sm">Nombre</label>
-                            <input type="text" class="form-control-sm" id="nombre">
+                            <input type="text" class="form-control-sm" id="nombre" pattern="[a-zA-Z]+" oninvalid="alert('Nombre no válido')">
                             <label for="direccion" class="form-label-sm">Dirección</label>
-                            <input type="text" class="form-control-sm" id="direccion">
+                            <input type="text" class="form-control-sm" id="direccion" pattern="[a-zA-Z0-9 ]+" oninvalid="alert('Dirección no válida')">
                             <label for="telefono" class="form-label-sm">Telefono</label>
-                            <input type="tel" class="form-control-sm" id="telefono">
+                            <input type="tel" class="form-control-sm" id="telefono" pattern="[0-9]{9}" oninvalid="alert('Teléfono no válido')">
                         </div>
                         <div id="infoOrden" class="flex-fill mt-4">
                             <div class="my-3 d-flex justify-content-around">
@@ -258,6 +259,7 @@
                                 <button type="submit" class="btn fw-bolder border-black">Comprar</button>
                             </div>
                         </div>
+                    </form>
                     </div>
                 </div>
 
@@ -339,7 +341,7 @@
     </div>
 
     <script src="bootsrap/js/bootstrap.bundle.min.js"></script>
-    <script src="bootsrap/js/js.js"></script>
+    <!--<script src="bootsrap/js/js.js"></script>-->
 </body>
 
 </html>
