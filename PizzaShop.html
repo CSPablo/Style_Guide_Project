@@ -25,7 +25,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Registrarse</a>
+                                    <a class="nav-link" href="#" id="registro">Registrarse</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Contacto</a>
@@ -294,7 +294,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade text-light" id="staticBackdrop" data-bs-theme="dark" data-bs-backdrop="static"
+    <div class="modal fade text-light" id="modalCookies" data-bs-theme="dark" data-bs-backdrop="static"
         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -340,8 +340,41 @@
         </div>
     </div>
 
+    <div class="modal fade text-light" id="modalRegistro" data-bs-theme="dark" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Registro</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="#">
+                <div class="modal-body d-flex flex-column">
+                            <label for="nombreRegistro" class="form-label-sm">Nombre</label>
+                            <input type="text" class="form-control-sm" id="nombreRegistro" pattern="[a-zA-Z]+" oninvalid="alert('Nombre no válido')">
+                            <label for="contraseñaRegistro" class="form-label-sm">Contraseña</label>
+                            <input type="password" id="contraseñaRegistro" class="form-control-sm" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,16}" oninvalid="alert('Contraseña no válida')">
+                            <div id="passwordHelpBlock" class="form-text">
+                                La contraseña debe contener mínimo una letra minúscula, una mayúscula y un número. Longitud entre 8 y 16 carácteres.
+                            </div>
+                            <label for="correoRegistro" class="form-label-sm">Correo</label>
+                            <input type="email" class="form-control-sm" id="correoRegistro" placeholder="correo@ejemplo.com" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" oninvalid="alert('Correo no válido')">                          
+                            <label for="direccionRegistro" class="form-label-sm">Dirección</label>
+                            <input type="text" class="form-control-sm" id="direccionRegistro" pattern="[a-zA-Z0-9 ]+" oninvalid="alert('Dirección no válida')">
+                            <label for="telefonoRegistro" class="form-label-sm">Telefono</label>
+                            <input type="tel" class="form-control-sm" id="telefonoRegistro" pattern="[0-9]{9}" oninvalid="alert('Teléfono no válido')">
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Registrarse!</button>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Ya tengo una cuenta!</button>
+                </div>
+            </form>
+
+            </div>
+        </div>
+    </div>
     <script src="bootsrap/js/bootstrap.bundle.min.js"></script>
-    <!--<script src="bootsrap/js/js.js"></script>-->
+    <script src="bootsrap/js/js.js"></script>
 </body>
 
 </html>
